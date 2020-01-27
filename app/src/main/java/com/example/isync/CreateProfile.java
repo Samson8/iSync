@@ -47,6 +47,7 @@ public class CreateProfile extends AppCompatActivity{
 	private AppCompatEditText password;
 	private AppCompatEditText password2;
 //	linking each textInputLayout
+//	linking each textInputLayout
 	TextInputLayout fnameTextLayout;
 	TextInputLayout lnameTextLayout;
 //	TextInputLayout genderTextLayout;
