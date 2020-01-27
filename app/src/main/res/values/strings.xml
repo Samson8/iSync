@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">iSync</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="facebook_app_id">437682763843993</string>
+    <string name="fb_login_protocol_scheme">fb437682763843993</string>
+    <string name="firstname">Firstname(e.g John)</string>
+    <string name="lastname">Lastname(e.g Doe)</string>
+    <string name="phone">Phone number(e.g 0811-234-5678)</string>
+    <string name="create_email">Email(e.g johndoe@example.com)</string>
+    <string name="createPassword1">Type a password</string>
+    <string name="createPassword2">Re-type password</string>
+    <string name="matricnumber">Matriculation number</string>
+    <string name="createAccount">Click here to create account</string>
+    <string name="forgotpass">Forgot password?</string>
+    <string name="createToolbar">Register your account</string>
+</resources>

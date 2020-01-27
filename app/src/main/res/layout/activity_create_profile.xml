@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="@string/createToolbar"
+        app:titleTextColor="@color/defTextColor" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fname_textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/firstnameEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/firstname"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lname_textInputLayout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/fname_textInputLayout">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/lastnameEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lastname"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/lname_textInputLayout">
+
+        <RadioGroup
+            android:id="@+id/genderRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/maleRd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/femaleRd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/gender_textInputLayout">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phoneEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/phone_textInputLayout">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emailEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/create_email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/college_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/email_textInputLayout">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/collegeSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/department_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/college_textInputLayout">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/departmentSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/level_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/department_textInputLayout">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/levelSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/matric_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/level_textInputLayout">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/matricEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/matricnumber"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass1_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/matric_textInputLayout"
+        app:passwordToggleEnabled="true">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passEd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/createPassword1"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass2_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/pass1_textInputLayout"
+        app:passwordToggleEnabled="true">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passEd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/createPassword2"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/save_textInputLayout"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/pass2_textInputLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:textColor="@color/defTextColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

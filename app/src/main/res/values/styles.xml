@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="characterOverflow">
+        <item name="android:textColor">@color/colorDanger</item>
+    </style>
+<!--    <style name="buttonCustom" parent="Widget.MaterialComponents.Button">-->
+<!--    <item name="cornerRadius">24dp</item>-->
+<!--        -->
+<!--    </style>-->
+</resources>
